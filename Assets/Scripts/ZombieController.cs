@@ -17,8 +17,17 @@ public class ZombieController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = tank.transform.position - transform.position;
-        direction.Normalize();
+
+    }
+
+    private void FixedUpdate()
+    {
+        Movement();
+    }
+
+    private void Movement()
+    {
+        Vector3 direction = (tank.transform.position - transform.position).normalized;
         GetComponent<Rigidbody>().AddForce(acceleration * direction, ForceMode.Acceleration);
     }
 }

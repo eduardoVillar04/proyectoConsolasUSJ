@@ -65,8 +65,8 @@ public class TankController : MonoBehaviour
     {
         GameObject newProjectile = Instantiate(projectilePrefab);
 
-        newProjectile.GetComponent<Transform>().position = projectileSpawnPoint.position;
-        newProjectile.GetComponent<Transform>().rotation = projectileSpawnPoint.rotation;
+        newProjectile.transform.position = projectileSpawnPoint.position;
+        newProjectile.transform.rotation = projectileSpawnPoint.rotation;
 
         newProjectile.GetComponent<Rigidbody>().velocity = rigidBody.velocity;
         newProjectile.GetComponent<Rigidbody>().AddForce(newProjectile.transform.forward * projectileSpeed, ForceMode.VelocityChange);
