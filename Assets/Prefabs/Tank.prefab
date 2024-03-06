@@ -382,4 +382,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 8638479615324212174, guid: 2c7df23c8ffcf9a4f86c9c3108e62e19, type: 3}
   projectileSpawnPoint: {fileID: 3898040017565408427}
   projectileSpeed: 0
+  projectileCooldown: 0.5
   rigidBody: {fileID: 0}
+  scoreText: {fileID: 0}
